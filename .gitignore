@@ -6,3 +6,4 @@
 #cogs
 /Cogs/Todo.py
 /Cogs/Starrer.py
+/Cogs/__pycache__/**
