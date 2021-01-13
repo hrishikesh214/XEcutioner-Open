@@ -1,0 +1,8 @@
+/dmc.c
+/__pycache__/**
+/config.json
+/.vs
+/requirements.txt
+#cogs
+/Cogs/Todo.py
+/Cogs/Starrer.py

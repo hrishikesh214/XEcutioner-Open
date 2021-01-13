@@ -1,0 +1,285 @@
+{
+    "about": {
+        "name":"About",
+        "desc":"Command gives info about Bot",
+        "usage":"about",
+        "permissions":"No permissions needed"
+    },
+    "myroles":{
+        "name":"Myroles",
+        "desc":"It shows list of your roles in the server",
+        "usage":"myroles",
+        "permissions":"No permissions  needed"
+    },
+    "qe":{
+        "name":"Quick Embed",
+        "desc":"Creates a quick embed with sender's name",
+        "usage":"qe <message>",
+        "permissions":"Manage Messages"
+    },
+    "fun":{
+        "name":"Fun",
+        "say":{
+            "name":"Say",
+            "desc":"Let bot echo what you want!",
+            "usage":"say <message>",
+            "permissions":"Manage Messages"
+        },
+        "ask":{
+            "name":"Ask",
+            "desc":"Ask Bot!",
+            "usage":"ask <question>",
+            "permissions":"No permissions needed"
+        },
+        "emoji":{
+            "name":"Emoji",
+            "desc":"Let bot send a random emoji!",
+            "usage":"emoji",
+            "permissions":"No permissions needed"
+        },
+        "timer":{
+            "name":"Timer",
+            "desc":"Count Down clock\nBot mentions you once its Zero!\nTime should be between 0 and 600",
+            "usage":"timer <time in seconds>",
+            "permissions":"No permissions  needed"
+        }
+    },
+    "meme":{
+        "name":"Meme",
+        "memecolor":{
+            "name":"Meme Embed Colour",
+            "desc":"Sets Embed Colour for memes sent by bot",
+            "usage":"memecolor <hex color>",
+            "permissions":"Administrator"
+        },
+        "meme":{
+            "name":"Requesting Meme",
+            "desc":"Bot sends a meme",
+            "usage":"meme",
+            "permissions":"No permissions needed"
+        }
+    },
+    "automeme":{
+        "name":"Automeme",
+        "desc":"This features makes bot send meme Automatically after every 10 minutes",
+        "channel":{
+            "name":"Automeme Channel",
+            "desc":"Sets channel where bots sends Automatic Meme",
+            "usage":"automeme channel <mention channel>",
+            "permissions":"Administrator"
+        },
+        "status":{
+            "name":"Automeme Status",
+            "desc":"Enable or Disable Automeme Feature",
+            "usage":"automeme status <on or off>",
+            "permissions":"Administrator"
+        }
+    },
+    "feedback":{
+        "name":"Feedback",
+        "desc":"Give us feedback! It motivates us to release more awsome features!",
+        "usage":"feedback <feedback message>",
+        "permissions":"All can feedback us 😄"
+    },
+    "report":{
+        "name":"Reporting Bug",
+        "desc":"Report a bug by sending us details! We will fix it ASAP",
+        "usage":"report <message>",
+        "permissions":"All can help us 😄"
+    },
+    "moderation":{
+        "name":"Moderation",
+        "clear":{
+            "name":"Clear",
+            "desc":"Deletes Messages",
+            "usage":"clear <number of messages>",
+            "permissions":"Manage Messages"
+        },
+        "kick":{
+            "name":"Kick",
+            "desc":"kicks a Member",
+            "usage":"kick <mention member> <reason>",
+            "permissions":"Administrator"
+        },
+        "ban":{
+            "name":"Ban",
+            "desc":"bans a Member",
+            "usage":"ban <mention member> <reason>",
+            "permissions":"Administrator"
+        },
+        "unban":{
+            "name":"Unban",
+            "desc":"unbans a Member",
+            "usage":"unban <member's id>",
+            "permissions":"Administrator"
+        },
+        "giverole":{
+            "name":"Give Role",
+            "desc":"give a role to Member\nRole should be below bot's role!",
+            "usage":"user giverole <mention member> <role name>",
+            "permissions":"Administrator"
+        },
+        "removerole":{
+            "name":"Remove Role",
+            "desc":"removes a role for Member\nRole should be below bot's role!",
+            "usage":"user removerole <mention member> <role name>",
+            "permissions":"Administrator"
+        }
+    },
+    "settings":{
+        "name":"Server Settings",
+        "setprefix":{
+            "name":"Changing Prefix",
+            "desc":"Changes Prefix for the server",
+            "usage":"setprefix <new prefix>",
+            "permissions":"Administrator"
+        },
+        "join":{
+            "name":"Welcome Message Setup",
+            "desc":"Setup for Welcoming Members",
+            "channel":{
+                "name":"Welcome Channel",
+                "desc":"Sets a channel for Welcome message",
+                "usage":"join channel <mention channel>",
+                "permissions":"Administrator"
+            },
+            "color":{
+                "name":"Join Embed Colour",
+                "desc":"Sets a Embed colour for Welcome message",
+                "usage":"join color <hex color>",
+                "permissions":"Administrator"
+            },
+            "status":{
+                "name":"Switching Welcoming Feature",
+                "desc":"Enable/Diable Welcome message",
+                "usage":"join status <1 or 0>",
+                "permissions":"Administrator"
+            },
+            "msg":{
+                "name":"Setting Welcome Message",
+                "desc":"Sets Welcome message",
+                "usage":"join msg <message>",
+                "permissions":"Administrator"
+            },
+            "addrole":{
+                "name":"Auto Roles",
+                "desc":"Give roles to newly joined users\nCopy-paste role name as it is",
+                "usage":"join addrole <role name>",
+                "permissions":"Administrator"
+            },
+            "removerole":{
+                "name":"Remove Auto a Role",
+                "desc":"Removes Autorole",
+                "usage":"join removerole <rolename>",
+                "permissions":"Administrator"
+            }
+        },
+        "leave":{
+            "name":"Leave Message Setup",
+            "desc":"Setup for Leaving Members Message",
+            "channel":{
+                "name":"Leave Channel",
+                "desc":"Sets a channel for Leave message",
+                "usage":"leave channel <mention channel>",
+                "permissions":"Administrator"
+            },
+            "color":{
+                "name":"Leave Embed Colour",
+                "desc":"Sets a Embed colour for Leave message",
+                "usage":"leave color <hex color>",
+                "permissions":"Administrator"
+            },
+            "status":{
+                "name":"Switching Leave Message Feature",
+                "desc":"Enable/Diable Leave message",
+                "usage":"leave status <1 or 0>",
+                "permissions":"Administrator"
+            },
+            "msg":{
+                "name":"Settings up Leave Message",
+                "desc":"Sets Leave message",
+                "usage":"leave msg <message>",
+                "permissions":"Administrator"
+            }
+        }
+    },
+    "utility":{
+        "pinboard":{
+            "name":"Pin Board",
+            "desc":"",
+            "pin":{
+                "name":"Pinning Messages",
+                "desc":"Bot pins message in pinchannel",
+                "usage":"pin <message id>",
+                "permissions":"No permissions needed"
+            },
+            "pinchannel":{
+                "name":"Setting Pinning Channel",
+                "desc":"Set Pinning channel where message is pinned!",
+                "usage":"pinchannel <mention channel>",
+                "permissions":"Administrator"
+            }
+        },
+        "todo":{
+            "name":"Todo Manager",
+            "desc":"",
+            "add":{
+                "name":"Add Task",
+                "desc":"Add Task to Todo Manager\nYou will be provided ID for task created which can be used for later purpose",
+                "usage":"todo add <title of the task>",
+                "permissions":"No permissions needed"
+            },
+            "remove":{
+                "name":"Removing Task",
+                "desc":"Remove Task from Todo Manager",
+                "usage":"todo remove <ID of the task>",
+                "permissions":"No permissions needed"
+            },
+            "showall":{
+                "name":"See All Tasks",
+                "desc":"Show all your Tasks",
+                "usage":"todo showall",
+                "permissions":"No permissions needed"
+            },
+            "show":{
+                "name":"See Details of a Task",
+                "desc":"Show a particular Task",
+                "usage":"todo show <ID of the task>",
+                "permissions":"No permissions needed"
+            },
+            "doing":{
+                "name":"Changing Task Status to Doing",
+                "desc":"Change task status to doing",
+                "usage":"todo doing <ID of the task>",
+                "permissions":"No permissions needed"
+            },
+            "done":{
+                "name":"Changing Task Status to Done",
+                "desc":"Change task status to done",
+                "usage":"todo done <ID of the task>",
+                "permissions":"No permissions needed"
+            },
+            "edit":{
+                "name":"Editing Task",
+                "desc":"Use following command",
+                "usage":"help todoedit",
+                "permissions":"No permissions needed"
+            }
+        },
+        "todoedit":{
+            "name":"Edit Existing Task",
+            "title":{
+                "name":"Editing Title of Task",
+                "desc":"Change title of the task",
+                "usage":"todoedit title <ID of the task> <new title>",
+                "permissions":"No permissions needed"
+            },
+            "desc":{
+                "name":"Editing Description of Task",
+                "desc":"Change title of the task",
+                "usage":"todoedit desc <ID of the task> <new description>",
+                "permissions":"No permissions needed"
+            }
+        }
+    }
+}
