@@ -28,7 +28,7 @@ class Basic(commands.Cog, name="Basic"):
         embed.add_field(name="Latency", value=f"`{floor(self.bot.latency * 1000)} ms`", inline=True)
         embed.add_field(name="Watching", value=f"`{len(self.bot.guilds)} servers`", inline=True)
         embed.add_field(name="Support", value=f"[Invite]({config['bot_invite_link']}) | [Official Discord Server]({config['official_dlink']})", inline=False)
-        embed.set_footer(text="Made with ❤️ By "+config['author'])
+        embed.set_footer(text="Made with ❤️ By "+config['author'], icon_url=author.avatar_url)
         embed.set_thumbnail(url=self.bot.user.avatar_url)
         # embed.set_author(name=author.name, icon_url=author.avatar_url)
         await ctx.message.channel.send(embed=embed)
@@ -120,12 +120,12 @@ class Basic(commands.Cog, name="Basic"):
             await ctx.message.add_reaction('👍')
         
     @commands.command()
-    async def sh(self, ctx, mid:int):
-        msg = await ctx.fetch_message(mid)
-        print(msg.content)
-        # await ctx.send(msg.embeds)
-        for embed in msg.embeds:
-            print(embed.to_dict())
+    async def sh(self, ctx):
+        embeds = []
+        embeds.append(discord.Embed(description="try 1", color=getEmbedColor()))
+        embeds.append(discord.Embed(description="try 2", color=getEmbedColor()))
+        paginator = BotEmbedPaginator(ctx, embeds)
+        await paginator.run()
 
 
 def setup(bot):

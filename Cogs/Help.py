@@ -13,6 +13,24 @@ class Help(commands.Cog, name="Help"):
             await ctx.send(f"{ext} reloaded!")
         except Exception as e:
             print(f"Error while loading extention({ext}): {e}")
+
+    @commands.command()
+    @commands.is_owner()
+    async def load(self, ctx, ext):
+        try:
+            self.bot.load_extension('Cogs.'+ext)
+            await ctx.send(f"{ext} loaded!")
+        except Exception as e:
+            print(f"Error while loading extention({ext}): {e}")
+
+    @commands.command()
+    @commands.is_owner()
+    async def unload(self, ctx, ext):
+        try:
+            self.bot.unload_extension('Cogs.'+ext)
+            await ctx.send(f"{ext} unloaded!")
+        except Exception as e:
+            print(f"Error while loading extention({ext}): {e}")
         
     @commands.group(name="help")
     async def help(self, ctx):

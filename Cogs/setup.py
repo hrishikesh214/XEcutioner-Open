@@ -6,8 +6,12 @@ import requests
 import secrets
 import datetime
 import mysql.connector as mysql
+import pytz
+import valorant
+from pytz import timezone
 from discord.ext import commands, tasks
 from discord.utils import *
+from disputils import BotEmbedPaginator
 
 replies_db = "./db/replies.json"
 todo_db = "./db/todo_db.json"
@@ -35,6 +39,8 @@ devdb = mysql.connect(
     password=config['devsql']['password'],
     database=config['devsql']['database']
     )
+
+valclient = valorant.Client(config['api']['valorant']['key'])
 
 if(db):
     mycur = db.cursor(dictionary=True)
